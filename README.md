@@ -1,121 +1,68 @@
-# Support Engineer Challenge
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Welcome! If you are reading this, it's likely because you want to work with us. If you have already applied, then continue on. If not, check out our [careers](https://newstorycharity.org/careers/) page to see our available openings. No software developer opening? Email us anyway!
+## Available Scripts
 
-# Instructions
+In the project directory, you can run:
 
-The goal of this coding challenge is to allow us to see how you approach a technical problem. This challenge is geared more towards a junior or entry level coding ability, specifically with experience in React.
+### `npm start`
 
-This should take about **2-3 hours** to complete, but please don't spend more than 5 hours on it. If you get to that point, it's likely that this current role might not be a good fit.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Upon completion, a **public** Github URL should be sent to the following:
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- [tim@newstorycharity.org](mailto:tim@newstorycharity.org)
+### `npm test`
 
-> Pro Tip. Read this doc in it's entirety BEFORE you do anything. One of the main things we'll be looking for is someone who can follow directions well.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## The Challenge
+### `npm run build`
 
-You'll be creating a React application that interacts with the XKCD API. 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-If you've never heard of XKCD before, it's a fun web comic. You can check it out here - [XKCD Website](https://xkcd.com).
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Their website API does not support CORS, so we've built out a proxy for you that can be found here - [XKCD PROXY](https://xkcd.now.sh/). There you will also find the documentation that you need for the API calls you will be making.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The goals are:
+### `npm run eject`
 
-1. Create a React Application
-2. Create a Home Page that displays the latest comic
-3. Create a Search Page that allows you to search & load a specific comic
-4. Follow all directions outlined below
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Pre-Requisites
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To ensure this runs properly, make sure the following are installed.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- [Git](https://git-scm.com/)
-- [Yarn](https://yarnpkg.com/lang/en/)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-You'll also need a code editor and terminal, but you know that drill!
+## Learn More
 
-## Requirements
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-First, head over to the [API website](https://xkcd.now.sh/) to get started. Feel free to make some test requests there to get a feeling for how the data will work.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Second, start on your project.
+### Code Splitting
 
-1. Clone this repo. Please use this for your project.
-2. Remove the current `git` configuration, and re-init yourself.
-    - `rm -rf .git`
-    - `git init`
-3. Add & Commit your first `Initial Commit` to your own repository
-4. Set up the Project
-    - We used [Create React App](https://create-react-app.dev/) to set it up.
-    - We stripped it down a bit to keep things simpler.
-    - You can read their documentation, but here are the basics:
-      - To Setup: `yarn install`
-      - To Run: `yarn start`
-      - Open up [http://localhost:3006](http://localhost:3006) to view the app.
-    - All of your programming will be done in the `./src` directory
-      - You shouldn't have to edit anything else.
-5. Create two pages/components/containers in the app
-    - HINT: You'll need some sort of router
-    - The URLs should be `http://localhost:3006` and `http://localhost:3006/search`
-6. Build out the Home Page
-    - The home page should display the latest comic upon load.
-7. Build out the Search Page
-    - Upon load, the search page just displays an input field
-    - When you add a value (1 - 2219) and submit, the corresponding comic will be displayed
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-# Element Classes
+### Analyzing the Bundle Size
 
-As you build the project, pay close attention to our CSS class name requirements. This will help ensure your app passes our automated tests. It will also allow us to see how well you follow instructions.
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## Home Page
+### Making a Progressive Web App
 
-There should be a navigation with 2 links, a "Latest" and a "Search" button/link.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-> Review the mockup here: [Home Page](https://i.imgur.com/xmzgCzf.png)
+### Advanced Configuration
 
-#### Classes
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-- The "Latest" link should have a class of `latest` on the clickable button.
-- The "Search" link should have a class of `search` on the clickable button.
-- Lastly, the image that will be displayed should have a class of `latestImage` on it.
+### Deployment
 
-## Search Page
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-The navigation will be identical to that on the "Home Page".
+### `npm run build` fails to minify
 
-> Review the mockup here: [Search Page](https://i.imgur.com/oHvZup1.png)
-
-#### Classes
-
-- The search input should have a class of `searchInput` on the input itself.
-- The search button should have a class of `searchSubmit` on the input itself.
-- Lastly, the image that will be displayed should have a class of `searchImage` on it.
-
-## Images
-
-All images should have both `title` and `alt` text on them.
-
-- The `alt` text should be pulled from the "title" field in the API response.
-- The `title` text should be pulled from the "alt" field in the API response.
-
-_(yes, we know it sounds reversed, but trust us)_
-
-# Working Example
-
-Feel free to take any liberties you'd like with design, but PLEASE NOTE the classes listed above for the elements.
-
-Feel free to have fun, implement your own styles and make it feel like your own.
-
-To help, here is a fully [working example](https://i.imgur.com/0dXELKX.gif).
-
-# Bonus
-
-There is a lot of other data available in the API response, such as "year", "month", "num", etc. Feel free to take that data and show it somewhere on the page.
-
-This isn't required, but feel free to go beyond the requirements. 
-
-
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
