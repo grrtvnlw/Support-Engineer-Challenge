@@ -31,7 +31,6 @@ export default class App extends React.Component {
   }
 
   onChange = (e) => {
-    // console.log(e.target.value)
     this.setState({
       name: Number(e.target.value)
     })
@@ -39,8 +38,6 @@ export default class App extends React.Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    console.log(e)
-    console.log(this.state.name)
     let id = this.state.name
     fetch(`https://xkcd.now.sh/?comic=${id}`)
     .then(res => res.json())
